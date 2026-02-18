@@ -1,0 +1,14 @@
+name: Verify Identity Step
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 22f2000537@ds.study.iitm.ac.in
+        run: echo "Hello, world! This action confirms my identity for the TDS GA2 exam."
